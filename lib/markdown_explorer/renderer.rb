@@ -1,18 +1,18 @@
 require "redcarpet"
 
 class MarkdownExplorer::Renderer
-  attr_reader :result
+  attr_reader :markup
 
   def initialize(text)
     @text = text
     render
   end
 
-  def render
-    @result = markdown.render(@text)
-  end
-
   private
+
+  def render
+    @markup = markdown.render(@text)
+  end
 
   def markdown
     @_markdown ||= Redcarpet::Markdown.new(html_renderer, extensions)
