@@ -2,6 +2,7 @@ require "sinatra"
 
 class MarkdownExplorer::Application < Sinatra::Base
   get "/" do
-    "Hello from the MarkdownExplorer Application!"
+    @files = Files.new(Dir.pwd)
+    erb :index
   end
 end
