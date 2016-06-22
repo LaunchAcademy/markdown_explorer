@@ -1,14 +1,19 @@
 <nav class="top-bar" data-topbar role="navigation">
   <ul class="title-area">
     <li class="name">
-      <h1><a href="/">Sagan</a></h1>
+      <h1><a href="/">MarkdownExplorer</a></h1>
     </li>
   </ul>
 
   <section class="top-bar-section">
-    <ul class="left">
-      <li><a href="/">"<%= @quote %>"</a></li>
-    </ul>
+    <% if @file %>
+      <ul class="left">
+        <li>
+          Currently Viewing:
+          <a href="/"><%= @file %></a>
+        </li>
+      </ul>
+    <% end %>
   </section>
 </nav>
 

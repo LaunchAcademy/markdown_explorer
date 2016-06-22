@@ -1,0 +1,23 @@
+<table>
+  <tr>
+    <th>Filename</th>
+  </tr>
+
+  <% @files.to_a.each do |filename| %>
+    <tr>
+      <td>
+        <a href="/show?filename=<%= filename %>">
+          <%= filename %>
+        </a>
+      </td>
+    </tr>
+  <% end %>
+
+  <% if @files.to_a.empty? %>
+    <tr>
+      <td>
+        No files found :(
+      </td>
+    </tr>
+  <% end %>
+</table>
