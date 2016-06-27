@@ -29,11 +29,12 @@ Gem::Specification.new do |spec|
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"
-  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
+  spec.executables   = "mdexplore"
   spec.require_paths = ["lib"]
 
-  spec.add_runtime_dependency "sinatra", "~> 1.4.7"
-  spec.add_runtime_dependency "redcarpet", "~> 3.3.4"
+  spec.add_runtime_dependency "rack", "~> 1.6"
+  spec.add_runtime_dependency "sinatra", "~> 1.4"
+  spec.add_runtime_dependency "redcarpet", "~> 3.3"
 
   spec.add_development_dependency "bundler", "~> 1.12"
   spec.add_development_dependency "rake", "~> 10.0"

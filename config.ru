@@ -3,5 +3,5 @@ require "bundler"
 
 Bundler.require
 
-require "./lib/markdown_explorer/application"
+require_relative "./lib/markdown_explorer/application"
 run MarkdownExplorer::Application
