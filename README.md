@@ -7,7 +7,9 @@ Currently, only read functionality is implemented.
 
 ## Installation
 
+```bash
 $ gem install markdown_explorer
+```
 
 
 ## Usage
@@ -25,9 +27,23 @@ Then, navigate to <http://localhost:8080> in your browser
 
 ## Development
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment. `rackup` will allow you to run a development instance of the app. `rake -T` for other commands.
+Use the [fork-and-branch](http://blog.scottlowe.org/2015/01/27/using-fork-branch-git-workflow/) workflow to contribute.
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+```bash
+$ cd markdown_explorer
+$ ./bin/setup      # install dependencies
+$ rake spec        # run the test suite
+$ ./bin/console    # open the interactive prompt
+$ ./exe/mdexplore  # run the application
+$ rake -T          # view rake commands
+```
+
+Other commands:
+
+```bash
+$ rake install:local  # install gem locally
+$ rake release        # release to RubyGems.org (bump version.rb, first)
+```
 
 
 ## TODO
