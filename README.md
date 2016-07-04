@@ -27,8 +27,6 @@ Then, navigate to <http://localhost:8080> in your browser
 
 ## Development
 
-Use the [fork-and-branch](http://blog.scottlowe.org/2015/01/27/using-fork-branch-git-workflow/) workflow to contribute.
-
 ```bash
 $ cd markdown_explorer
 $ ./bin/setup      # install dependencies
@@ -56,7 +54,9 @@ $ rake release        # release to RubyGems.org (bump version.rb, first)
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/LaunchAcademy/markdown_explorer. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/LaunchAcademy/markdown_explorer. Use the [fork-and-branch](http://blog.scottlowe.org/2015/01/27/using-fork-branch-git-workflow/) workflow to contribute.
+
+This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License
